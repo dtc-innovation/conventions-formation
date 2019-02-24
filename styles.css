@@ -1,0 +1,45 @@
+footer {
+  position: running(footer);
+}
+
+.missing-param {
+  color: red;
+  font-family: monospace;
+  font-style: normal;
+}
+
+table.signature {
+  width: 100%;
+}
+  table.signature td,
+  table.signature th {
+    padding: 10px;
+  }
+
+  table.signature th:nth-child(1),
+  table.signature td:nth-child(1) {
+    text-align: left;
+  }
+  table.signature th:nth-child(2),
+  table.signature td:nth-child(2) {
+    text-align: right;
+  }
+
+@page {
+  size: A4;
+  margin: 30mm 25mm;
+
+  @top-left {
+    content: "dtc innovation";
+    text-align: left;
+  }
+
+  @top-right {
+    content: "Page " counter(page);
+    text-align: right;
+  }
+
+  @bottom-center {
+    content: element(footer);
+  }
+}
