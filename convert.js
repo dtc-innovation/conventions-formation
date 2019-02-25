@@ -3,6 +3,7 @@ import {getParams} from './url.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.querySelector('[data-markdown]');
+  const title = document.querySelector('head > title').textContent;
   const params = getParams(location.search);
 
   Mustache.Context.prototype.lookup = lookup;
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   md.use(markdownItAttrs);
 
   root.innerHTML = md.render(
-    Mustache.render(root.innerHTML, {...params, dateFormat})
+    Mustache.render(root.innerHTML, {...params, dateFormat, title})
   );
 
   PagedPolyfill.preview();

@@ -1,6 +1,24 @@
+body {
+  color: #333;
+  font-family: -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
+  line-height: 1.35;
+}
+
+address {
+  font-style: normal;
+}
+
+.digits {
+  font-variant-numeric: oldstyle-nums;
+}
+
 footer {
+  line-height: 1.15;
   position: running(footer);
 }
+  footer p {
+    margin: 5px 0;
+  }
 
 .missing-param {
   color: red;
