@@ -12,6 +12,10 @@ address {
   font-variant-numeric: oldstyle-nums;
 }
 
+header {
+  position: running(company);
+}
+
 footer {
   line-height: 1.15;
   position: running(footer);
@@ -48,7 +52,7 @@ table.signature {
   margin: 30mm 25mm;
 
   @top-left {
-    content: "dtc innovation";
+    content: element(company);
     text-align: left;
   }
 
