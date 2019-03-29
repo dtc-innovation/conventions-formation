@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta charset="UTF-8">
   <title>Développement web orienté UX et datavisualisation</title>
   <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA">
   <link rel="stylesheet" href="../styles.css">
@@ -16,9 +17,9 @@
   <script src="../convert.js" type="module"></script>
 </head>
 <body>
-<header class="company">/ut7</header>
+<header class="company"><img src="data:image/png;base64,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" style="max-width: 150px; background-color: black;" alt="/ut7"></header>
 <footer class="footer">
-  <address>/ut7 SCOP ÀRL à capital variable – 14 avenue Ledru-Rollin, 75012 Paris</address>
+  <address><code>/ut7</code> SCOP ÀRL à capital variable – 14 avenue Ledru-Rollin, 75012 Paris</address>
   <p><span class="digits">502 529 795 00069</span> RCS Paris</p>
 </footer>
 
@@ -27,7 +28,7 @@
 
 **Entre les soussigné·e·s** :
 
-1. l'organisme de formation **/ut7** dont la déclaration d'activité est enregistrée sous
+1. l'organisme de formation `/ut7` dont la déclaration d'activité est enregistrée sous
 le numéro 11 75 44738 75 auprès du préfet de région d'Île-de-France d'une part,
 2. et la personne morale **{{trainee}}** d'autre part,
 
@@ -37,14 +38,14 @@ continue dans le cadre de l'éducation permanente.
 
 ## Objet de la convention
 
-L'organisme _/ut7_ organise l'action de formation suivante : **{{title}}**.
+L'organisme `/ut7` organise l'action de formation suivante : **{{title}}**.
 
 L'objectif de la formation "{{title}}" est d'amener
 les participant·e·s à intégrer de nombreuses techniques de
 programmation, de manière à ce qu'ils ou elles puissent s'en servir de
 manière réflexe, dans leur travail quotidien, quand la situation l'exige.
 
-Ce cours est présenté en français par un intervenant _/ut7_ sur
+Ce cours est présenté en français par un intervenant `/ut7` sur
 des sessions hebdomadaires, sous forme magistrale et interactive.
 Les participant·e·s sont invité·e·s au fil des sessions à mémoriser,
 à s'approprier, puis à présenter au reste du groupe des exercices de programmation
@@ -52,7 +53,7 @@ de difficulté croissante, exercices s'attachant à des problématiques diverses
 rencontrées dans le développement logiciel.
 
 Les participant·e·s ont la possibilité pendant et entre chaque session de
-discuter avec l'intervenant _/ut7_, expert en programmation,
+discuter avec l'intervenant `/ut7`, expert en programmation,
 en techniques de développement incrémental de logiciel et en transmission
 de compétences par la pratique.
 
@@ -77,16 +78,16 @@ connaissances) : **acquisition et perfectionnement de connaissances**.
 
 
 - Dates :
-  - Planification : 15/04/2019, 29/04/2019, 13/05/2019, 27/05/2019, 11/06/2019, 24/06/2019, 8/07/2019, 22/07/2019
-  - Binômage : 17/04/2019, 24/04/2019, 2/05/2019, 7/05/2019, 15/05/2019, 22/05/2019, 29/05/2019, 5/06/2019, 12/06/2019, 19/06/2019, 26/06/2019, 3/07/2019, 10/07/2019, 17/07/2019, 24/07/2019, 31/07/2019
-  - Rétrospective : 26/04/2019, 10/05/2019, 24/05/2019, 7/06/2019, 21/06/2019, 5/07/2019, 19/07/2019, 2/08/2019
+  - Planification : 29/04/2019, 13/05/2019, 27/05/2019, 11/06/2019, 24/06/2019, 8/07/2019, 22/07/2019, 05/08/2019
+  - Binômage : 2/05/2019, 7/05/2019, 15/05/2019, 22/05/2019, 29/05/2019, 5/06/2019, 12/06/2019, 19/06/2019, 26/06/2019, 3/07/2019, 10/07/2019, 17/07/2019, 24/07/2019, 31/07/2019, 7/08/2019, 14/08/2019
+  - Rétrospective : 10/05/2019, 24/05/2019, 7/06/2019, 21/06/2019, 5/07/2019, 19/07/2019, 2/08/2019, 16/08/2019
 - Durée : 8 itérations de 1 heure (planification) + 2×2 heures (binômage) + 1 heure (rétrospective), soit **48 heures** de formation
 - Horaires : les sessions sont organisées à 14h, sauf arrangement communiqué dans les 7 jours qui précèdent
 - Lieu : vidéoconférence sur Internet (Skype, Jitsi, Zoom.us)
 
 ## Effectif formé
 
-L'organisme _/ut7_ formera **{{trainee}}**.
+L'organisme `/ut7` formera **{{trainee}}**.
 
 ## Plan et support de cours
 
