@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Développement web avec Node.js</title>
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA">
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    window.PagedConfig = {
+      auto: false
+    };
+  </script>
+  <script src="https://unpkg.com/mustache@^3/mustache.js"></script>
+  <script src="https://unpkg.com/markdown-it@^8/dist/markdown-it.js"></script>
+  <script src="https://unpkg.com/markdown-it-attrs@^2/markdown-it-attrs.browser.js"></script>
+  <script src="https://unpkg.com/pagedjs@0.1.30/dist/paged.polyfill.js"></script>
+  <script src="../convert.js" type="module"></script>
+</head>
+<body>
+<header class="company">dtc innovation</header>
+<footer class="footer">
+  <address><code>dtc innovation</code> – 165 rue du tondu, 33000 Bordeaux</address>
+  <p>SIRET <span class="digits">823 553 557 00013</span></p>
+</footer>
+
+<main data-markdown>
+# Convention simplifiée de formation professionnelle (article L 6353-1 du code du travail)
+
+**Entre les soussigné·e·s** :
+
+1. l'organisme de formation `dtc innovation` dont la déclaration d'activité est
+en cours d'enregistrement auprès du préfet de région Nouvelle-Aquitaine d'une part,
+2. et la personne morale **{{trainee}}** d'autre part,
+
+est conclue la convention suivante, en application des dispositions du livre IX
+du code du travail portant sur l'organisation de la formation professionnelle
+continue dans le cadre de l'éducation permanente.
+
+## Objet de la convention
+
+L'organisme `dtc innovation` organise l'action de formation suivante : **{{title}}**.
+
+L'objectif de la formation "{{title}}" est d'amener
+les participant·e·s à intégrer de nombreuses techniques de
+programmation, de manière à ce qu'ils ou elles puissent s'en servir de
+manière réflexe, dans leur travail quotidien, quand la situation l'exige.
+
+Ce cours est présenté en français par un intervenant `dtc innovation` sur
+des sessions hebdomadaires, sous forme magistrale et interactive.
+Les participant·e·s sont invité·e·s au fil des sessions à mémoriser,
+à s'approprier, puis à présenter au reste du groupe des exercices de programmation
+de difficulté croissante, exercices s'attachant à des problématiques diverses
+rencontrées dans le développement logiciel.
+
+Les participant·e·s ont la possibilité pendant et entre chaque session de
+discuter avec l'intervenant `dtc innovation`, expert en programmation,
+en techniques de développement incrémental de logiciel et en transmission
+de compétences par la pratique.
+
+Cette formation s'adresse à des designers UX ayant une expérience minimale
+en manipulation de données et ayant constitué des systèmes d'information visuels
+dans un contexte professionnel, c'est-à-dire entre autres
+sous les contraintes suivantes :
+
+- conception d'un système d'information visuel ("_design system_") à l'aide d'un logiciel graphique (Photoshop, Sketch, Figma, etc.)
+- conception de visualisations de données depuis des API ou des fichiers (CSV, JSON, XML) à l'aide d'un outil graphique ou d'un service en ligne (data.gouv.fr, datawrapper, etc.)
+- programmation de pages web avec HTML, CSS et JavaScript
+
+Il est attendu comme pré-requis que les participant·e·s aient une
+connaissance préalable et pratique des représentations de données, des principes
+d'architecture de l'information et des fondamentaux du fonctionnement des
+documents web, qu'ils ou elles utilisent un ou plusieurs éditeurs de textes
+pour modifier des programmes existants.
+
+Type d'action de formation (article L 6313-1 du code du travail : adaptation,
+promotion, prévention, acquisition, entretien ou perfectionnement des
+connaissances) : **acquisition et perfectionnement de connaissances**.
+
+
+- Dates :
+  - Planification : 29/04/2019, 13/05/2019, 27/05/2019, 11/06/2019, 24/06/2019, 8/07/2019, 22/07/2019, 05/08/2019
+  - Binômage : 2/05/2019, 7/05/2019, 15/05/2019, 22/05/2019, 29/05/2019, 5/06/2019, 12/06/2019, 19/06/2019, 26/06/2019, 3/07/2019, 10/07/2019, 17/07/2019, 24/07/2019, 31/07/2019, 7/08/2019, 14/08/2019
+  - Rétrospective : 10/05/2019, 24/05/2019, 7/06/2019, 21/06/2019, 5/07/2019, 19/07/2019, 2/08/2019, 16/08/2019
+- Durée : 8 itérations de 1 heure (planification) + 2×2 heures (binômage) + 1 heure (rétrospective), soit **48 heures** de formation
+- Horaires : les sessions sont organisées à 14h, sauf arrangement communiqué dans les 7 jours qui précèdent
+- Lieu : vidéoconférence sur Internet (Skype, Jitsi, Zoom.us)
+
+## Effectif formé
+
+L'organisme `dtc innovation` formera **{{trainee}}**.
+
+## Plan et support de cours
+
+Chaque participante et participant aura accès à un serveur web sur lequel
+seront repris les exercices et les notions abordées en cours.
+
+### JavaScript
+
+### Node.js
+
+### Agilité logicielle
+
+- binômage
+- intégration continue
+- principes de classification, d'organisation et de prises de décision collectives avec une gestion fine des prises de parole
+- principes d'amélioration continue de manière itérative, pilotée par des contraintes de temps, de budget et de valeur produit
+- rédaction d'actions de développement ("_user stories_") pour expliciter les attentes
+- animation de réunion de planification et de priorisation des actions de développement
+- animation de réunion de rétrospective pour capter les sources de réussite et d'amélioration du travail en équipe
+- conception de plans d'itération avec des outils numériques (Trello, GitHub Projects, GitLab Projects, Taïga)
+
+## Dispositions financières
+
+En contrepartie de cette action de formation, l'employeur s'acquittera
+des coûts suivants.
+
+Frais de formation : **{{prix_ht}},00€ hors taxes**.
+
+## Modalités de règlement
+
+Les modalités de règlement entre les parties prenantes à la convention sont
+les suivantes.
+
+- Facture envoyée après chaque itération complétée
+- Règlement sous 30 jours après réception de la facture
+- Paiement par {{payer}} (**pas de délégation de paiement**)
+- Taux d'intérêt des pénalités de retard exigibles le jour suivant la date de
+règlement : taux de la BCE majoré de 10 points, soit 10,05%, plus forfait de 40,00€.
+
+
+## Inexécution totale ou partielle de la formation
+
+En cas d'inexécution partielle ou totale de l'action de formation, l'organisme
+prestataire remboursera au contractant les sommes indûment perçues de ce
+fait (article 6354-1 du code du travail).
+
+## Différends éventuels
+
+Si une contestation ou un différend ne peuvent être réglés à l'amiable,
+le tribunal de Bordeaux sera seul compétent pour régler le litige.
+
+Fait en triple exemplaires à Bordeaux, le {{#dateFormat}}{{docdate}}{{/dateFormat}}.
+
+| Pour la personne,           | Pour l'organisme, |
+| ---                         | ---              |
+| {{trainee}}                 | {{signee}}       |
+{.signature}
+
+</main>
+</body>
+</html>
