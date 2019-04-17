@@ -23,6 +23,9 @@ footer {
   footer p {
     margin: 5px 0;
   }
+  footer code {
+    font-family: inherit;
+  }
 
 .missing-param {
   color: red;

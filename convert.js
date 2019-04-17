@@ -1,3 +1,4 @@
+import {Previewer} from 'https://unpkg.com/pagedjs@0.1.33/dist/paged.esm.js';
 import {dateFormat, lookup} from './mustache.js';
 import {getParams} from './url.js';
 
@@ -20,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
     Mustache.render(root.innerHTML, {...params, dateFormat, title})
   );
 
-  PagedPolyfill.preview();
+  new Previewer().preview();
 });

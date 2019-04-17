@@ -13,11 +13,10 @@
   <script src="https://unpkg.com/mustache@^3/mustache.js"></script>
   <script src="https://unpkg.com/markdown-it@^8/dist/markdown-it.js"></script>
   <script src="https://unpkg.com/markdown-it-attrs@^2/markdown-it-attrs.browser.js"></script>
-  <script src="https://unpkg.com/pagedjs@0.1.30/dist/paged.polyfill.js"></script>
   <script src="../convert.js" type="module"></script>
 </head>
 <body>
-<header class="company">dtc innovation</header>
+<header class="company">dtc&nbsp;innovation</header>
 <footer class="footer">
   <address><code>dtc innovation</code> – 165 rue du tondu, 33000 Bordeaux</address>
   <p>SIRET <span class="digits">823 553 557 00013</span></p>
@@ -57,32 +56,28 @@ discuter avec l'intervenant `dtc innovation`, expert en programmation,
 en techniques de développement incrémental de logiciel et en transmission
 de compétences par la pratique.
 
-Cette formation s'adresse à des designers UX ayant une expérience minimale
-en manipulation de données et ayant constitué des systèmes d'information visuels
-dans un contexte professionnel, c'est-à-dire entre autres
-sous les contraintes suivantes :
-
-- conception d'un système d'information visuel ("_design system_") à l'aide d'un logiciel graphique (Photoshop, Sketch, Figma, etc.)
-- conception de visualisations de données depuis des API ou des fichiers (CSV, JSON, XML) à l'aide d'un outil graphique ou d'un service en ligne (data.gouv.fr, datawrapper, etc.)
-- programmation de pages web avec HTML, CSS et JavaScript
+Cette formation s'adresse à des développeur·ses web qui ont un historique
+de développement dans un autre langage que JavaScript (PHP, Ruby, C#, etc.)
+et qui ont envie de devenir des professionnel·le·s reconnu·e·s sur les
+technologies JavaScript et Node.js.
 
 Il est attendu comme pré-requis que les participant·e·s aient une
-connaissance préalable et pratique des représentations de données, des principes
-d'architecture de l'information et des fondamentaux du fonctionnement des
-documents web, qu'ils ou elles utilisent un ou plusieurs éditeurs de textes
-pour modifier des programmes existants.
+connaissance préalable et pratique des éléments suivants :
+
+- développement d'applications web dynamiques
+- développement et utilisation d'API REST
+- développement d'interfaces web avec HTML, CSS et JavaScript
+- utilisation d'un éditeur de code pour modifier des programmes existants
+- gestionnaire distribué de versions Git
 
 Type d'action de formation (article L 6313-1 du code du travail : adaptation,
 promotion, prévention, acquisition, entretien ou perfectionnement des
 connaissances) : **acquisition et perfectionnement de connaissances**.
 
 
-- Dates :
-  - Planification : 29/04/2019, 13/05/2019, 27/05/2019, 11/06/2019, 24/06/2019, 8/07/2019, 22/07/2019, 05/08/2019
-  - Binômage : 2/05/2019, 7/05/2019, 15/05/2019, 22/05/2019, 29/05/2019, 5/06/2019, 12/06/2019, 19/06/2019, 26/06/2019, 3/07/2019, 10/07/2019, 17/07/2019, 24/07/2019, 31/07/2019, 7/08/2019, 14/08/2019
-  - Rétrospective : 10/05/2019, 24/05/2019, 7/06/2019, 21/06/2019, 5/07/2019, 19/07/2019, 2/08/2019, 16/08/2019
-- Durée : 8 itérations de 1 heure (planification) + 2×2 heures (binômage) + 1 heure (rétrospective), soit **48 heures** de formation
-- Horaires : les sessions sont organisées à 14h, sauf arrangement communiqué dans les 7 jours qui précèdent
+- Dates : 25/04/2019, 2/05/2019, 9/05/2019, 16/05/2019, 22/05/2019, 29/05/2019
+- Durée : 6 sessions de 2 heures (binômage) + 3 sessions de 30 minutes (rétrospective), soit **13 heures et demi** de formation
+- Horaires : les sessions sont organisées à 10h, sauf arrangement communiqué dans les 3 jours qui précèdent
 - Lieu : vidéoconférence sur Internet (Skype, Jitsi, Zoom.us)
 
 ## Effectif formé
@@ -96,7 +91,33 @@ seront repris les exercices et les notions abordées en cours.
 
 ### JavaScript
 
+- les primitives et types de données
+- programmation asynchrone (callbacks, promesses, `async`/`await`)
+- travailler avec des structures de données : opérateur spread, destructuration, assignation
+- copier des valeurs (par référence, par copie)
+- les objets `Map` et `Set`
+- les symboles
+- architecturer son code sans effet de bord (variable globale vs. modules)
+- programmation fonctionnelle
+
 ### Node.js
+
+- solutions CMS clé-en-main (à la Drupal)
+- exploration des modules natifs
+- programmation événementielle
+- architecturer son code de manière modulaire
+- écriture de tests unitaires (_Test Driven Development_)
+- tests automatisés de parcours utilisateurs
+- déploiement automatisé (intégration continue, déploiement continu)
+- authentification des utilisateurs (JSON Web Token)
+
+### Développement web
+
+- outiller le partage de modules entre Node.js et une page HTML
+- optimiser les ressources graphiques (CSS, fontes, images bitmap, images vectorielles)
+- programmation avec un arbre à états (_design-pattern_ Redux)
+- programmation avec des composants graphiques pilotés par la donnée (React, Vue.js)
+- partager les composants de rendu d'affichage entre le serveur et le client
 
 ### Agilité logicielle
 
@@ -121,7 +142,7 @@ Frais de formation : **{{prix_ht}},00€ hors taxes**.
 Les modalités de règlement entre les parties prenantes à la convention sont
 les suivantes.
 
-- Facture envoyée après chaque itération complétée
+- Facture envoyée après la dernière session
 - Règlement sous 30 jours après réception de la facture
 - Paiement par {{payer}} (**pas de délégation de paiement**)
 - Taux d'intérêt des pénalités de retard exigibles le jour suivant la date de
