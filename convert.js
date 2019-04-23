@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const md = new markdownit('default', {
     html: false,
+    linkify: true,
     typographer: true,
     quotes: ['«\xA0', '\xA0»', '‹\xA0', '\xA0›']
   });

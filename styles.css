@@ -12,6 +12,10 @@ address {
   font-variant-numeric: oldstyle-nums;
 }
 
+.page-break {
+  page-break-before: always;
+}
+
 header {
   position: running(company);
 }
