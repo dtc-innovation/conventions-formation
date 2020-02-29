@@ -1,3 +1,7 @@
+:root {
+  --main-color: #41b5ac;
+}
+
 body {
   color: #333;
   font-family: -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
@@ -9,11 +13,25 @@ address {
 }
 
 .digits {
-  font-variant-numeric: oldstyle-nums;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .page-break {
   page-break-before: always;
+}
+.inline-list li {
+  display: inline;
+}
+.inline-list li:not(:last-of-type)::after {
+  content: ", ";
+}
+.inline-list li:last-of-type::after {
+  content: ".";
+}
+
+.no-break {
+  page-break-inside: avoid;
 }
 
 header {
@@ -23,12 +41,31 @@ header {
 footer {
   line-height: 1.15;
   position: running(footer);
+  text-align: left;
 }
+  footer,
+  footer a {
+    color: var(--main-color);
+  }
   footer p {
     margin: 5px 0;
   }
   footer code {
     font-family: inherit;
+  }
+  footer dl {
+    display: flex;
+    margin: .15em 0 0;
+  }
+  footer dt {
+    font-weight: bold;
+  }
+  footer dd,
+  footer dt {
+    margin: 0 1em 0 0;
+  }
+  footer dd + dt {
+    margin-left: 1em;
   }
 
 .missing-param {
@@ -43,14 +80,10 @@ table.signature {
   table.signature td,
   table.signature th {
     padding: 10px;
-  }
-
-  table.signature th:nth-child(1),
-  table.signature td:nth-child(1) {
     text-align: left;
   }
-  table.signature th:nth-child(2),
-  table.signature td:nth-child(2) {
+  table.signature th:last-child,
+  table.signature td:last-child {
     text-align: right;
   }
 

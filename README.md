@@ -2,12 +2,18 @@
 
 Conventions de formation anonymisées. Elles se transforment en document PDF avec la fonction "Imprimer" de votre navigateur web.
 
+# Conventions 2020
+
+- [Apprendre à développer une cartographie web](2020/webdev-carto.html)
+
 
 # Conventions 2019
 
-- [Développement web orienté UX et datavisualisation](2019/webdev-ux.html)
 - [Développement web avec Node.js](2019/node.js.html)
 
-# Numéro d'enregistrement
 
-N/C.
+# Visualiser localement
+
+```shell
+$ npx serve
+```

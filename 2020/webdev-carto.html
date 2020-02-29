@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Développement web de visualisation cartographique</title>
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://unpkg.com/mustache@^3/mustache.js"></script>
+  <script src="https://unpkg.com/markdown-it@^8/dist/markdown-it.js"></script>
+  <script src="https://unpkg.com/markdown-it-attrs@^2/markdown-it-attrs.browser.js"></script>
+  <script src="../convert.js" type="module"></script>
+</head>
+<body>
+<header class="company"><img src="../logos/solstice.svg" style="width: 200px;" alt="Solstice"></header>
+<footer class="footer">
+  <address>SCOP Solstice – Écosite, ronde des Alisiers, 26400 Eurre</address>
+  <dl>
+    <dd><a href="http://www.solstice.coop" target="_blank" rel="noreferrer noopener">
+      solstice.coop
+    </a></dd>
+    <dd><a href="mailto:accueil@solstice.coop">accueil@solstice.coop</a></dd>
+    <dd><a href="tel:+33475253230">04 75 25 32 30</a></dd>
+  </dl>
+  <dl>
+    <dt>Comptabilité</dt>
+    <dd><a href="tel:+33483433843">04 83 43 38 43</a></dd>
+  </dl>
+  <dl>
+    <dt>Siret</dt>
+    <dd class="digits">438 279 382 00040</dd>
+    <dt>NAF</dt>
+    <dd class="digits">7022Z</dd>
+    <dt>TVA</dt>
+    <dd class="digits">FR54 438 279 382</dd>
+  </dl>
+</footer>
+
+<main data-markdown>
+# Convention simplifiée de formation professionnelle (article L 6353-1 du code du travail)
+N°{{docdate}}-N°000{.subtitle}
+
+**Entre les soussigné·e·s** :
+
+1. l'organisme de formation **Solstice**, SCOP SA à capital variable,
+  immatriculée au RCS de Romans sur Isère sous le numéro
+  [438 279 382 00040](https://entreprise.data.gouv.fr/etablissement/43827938200040),
+  APE 7022Z et enregistrée auprès de la Direction Régionale des Entreprises,
+  de la Concurrence, de la Consommation, du Travail et de l’Emploi (DIRECCTE)
+  Auvergne Rhône-Alpes sous le numéro [82 26 01148 26](https://reseau.intercariforef.org/formations/details/organisme-26_4416.html)
+  au titre de la formation professionnelle continue,
+  dont le siège social est sis Ecosite - Ronde des Alisiers – 26400 EURRE,
+  représentée par M. Jean-Jacques MAGNAN, directeur général, ayant tout
+  pouvoir à l’effet des présentes,<br>
+  désignée ci-après l’**Organisme de formation**, d’une part,
+2. et la personne morale **{{trainee}}** immatriculée en Préfecture sous le numéro
+  [{{siret}}](https://entreprise.data.gouv.fr/etablissement/{{siret}}),<br>
+  désignée ci-après la **Demandeuse**, d’autre part.
+
+
+## Préambule
+
+L’Organisme de formation est une coopérative d’activité et d’emploi au
+sens de la loi n°2014-856 du 31 juillet 2014.
+Dans cette entreprise partagée des entrepreneurs autonomes sur la
+gestion et le développement de leur activité économique partagent un
+statut juridique, social et fiscal, autant qu’ils mutualisent des
+services et des moyens.
+
+La prestation objet de cette convention est proposée, conçue et
+conduite par l’entrepreneur {{trainer}} qui, à ce titre, est responsable
+de sa bonne exécution. Il est l’interlocuteur principal de la Demandeuse.
+
+Ainsi, il a été conclu et arrêté la Convention suivante, en application de
+l’article L6353-1 du Code du Travail.
+Cette Convention et ses annexes se substituent à tout autre accord
+préalable quelle que soit sa forme ou sa nature.
+
+## Objet de la convention
+
+La présente Convention a pour objet la réalisation par l’Organisme de
+formation d’une Action de formation à **{{trainee}}**,
+intitulée "**{{title}}**".
+
+
+## Formateur
+
+L’Action de formation sera conduite par {{trainer}},
+formateur en développement web et en ingéniérie de projet.
+
+
+## Formation
+
+L'objectif de la formation "{{title}}" est d'amener
+les participant·e·s à intégrer de nombreuses techniques de
+programmation, de manière à ce qu'ils ou elles puissent s'en servir de
+manière réflexe, dans leur travail quotidien, quand la situation l'exige.
+
+Ce cours est présenté en français par un intervenant **Solstice** sur
+des sessions hebdomadaires ou bimensuelles, sous forme magistrale et interactive.
+Les participant·e·s sont invité·e·s au fil des sessions à mémoriser,
+à s'approprier, puis à présenter au reste du groupe des exercices de programmation
+de difficulté croissante, exercices s'attachant à des problématiques diverses
+rencontrées dans le développement logiciel.
+
+Les participant·e·s ont la possibilité pendant et entre chaque session de
+discuter avec l'intervenant **Solstice**, expert en programmation,
+en techniques de développement incrémental de logiciel et en transmission
+de compétences par la pratique.
+
+Cette formation s'adresse à des designers UX ayant une utilisation non-technique
+des données, et ayant constitué des systèmes d'information visuels
+dans un contexte professionnel, c'est-à-dire entre autres
+sous les contraintes suivantes :
+
+- conception d'un système d'information visuel ("_design system_") à l'aide d'un logiciel graphique (Photoshop, Sketch, Figma, etc.)
+- conception graphique de visualisations de données
+- programmation de pages web avec HTML, CSS et JavaScript
+
+Il est attendu comme pré-requis que les participant·e·s aient une
+connaissance préalable théorique des représentations de données, des principes
+d'architecture de l'information et des fondamentaux du fonctionnement des
+documents web, qu'ils ou elles utilisent un ou plusieurs éditeurs de textes
+pour modifier des programmes existants.
+
+Type d'action de formation (article L 6313-1 du code du travail : adaptation,
+promotion, prévention, acquisition, entretien ou perfectionnement des
+connaissances) : **acquisition et perfectionnement de connaissances**.
+
+
+## Contenu de l'Action de Formation
+
+Chaque participant·e aura accès à un serveur web sur lequel
+seront repris les exercices et les notions abordées en cours.
+
+### Visualisation de données
+
+- usages et formats de données (JSON, JSON-LD, GeoJSON, XML, CSV)
+- inspection de données depuis un terminal informatique (jq, csvkit)
+- panorama des bibliothèques de visualisation de données pour le web (Leaflet, D3.js, Vega, Plotly)
+- panorama des composants de visualisation sous forme logicielle (donuts, camemberts, histogrammes, courbes, arbres, sparklines, etc.)
+- fusion de jeux de données pour compléter et contextualiser des informations manquantes ou partielles
+- nettoyage et transformation de jeux de données publics en visualisations fonctionnelles dans les navigateurs web
+
+### Développement web
+
+- utilisation de la console et des outils de développement web
+- CSS : variables et calculs de valeurs
+- CSS : présentation fluide et en grille
+- HTML : accessibilité ARIA
+- HTML : créer des formulaires et transmettre des données
+- JavaScript : récupérer des données statiques et dynamiques
+- JavaScript : itérer et filtrer des listes et collections d'objets
+- JavaScript : lire et écrire des fonctions réutilisables
+- JavaScript : intégrer une librairie tierce
+- JavaScript : faire réagir l'interface aux interactions utilisateur
+
+### Systèmes d'information visuels
+
+- transposition des concepts visuels sous forme programmatique
+- interfaçage des outils traditionnels (Sketch, Figma, Primer) avec des librairies visuelles JavaScript (D3.js, Vega)
+- gestion des versions en ligne avec le système de branches de Git
+- auto-publication du code sur GitHub Pages
+
+### Agilité logicielle
+
+- binômage
+- intégration continue
+- principes de classification, d'organisation et de prises de décision collectives avec une gestion fine des prises de parole
+- principes d'amélioration continue de manière itérative, pilotée par des contraintes de temps, de budget et de valeur produit
+- rédaction d'actions de développement ("_user stories_") pour expliciter les attentes
+- animation de réunion de planification et de priorisation des actions de développement
+- animation de réunion de rétrospective pour capter les sources de réussite et d'amélioration du travail en équipe
+- conception de plans d'itération avec des outils numériques (Trello, GitHub Projects, GitLab Projects, Taïga)
+
+## Dates prévisionnelles et durée
+
+L’Action de formation se déroulera sur **40 heures**
+réparties sur 16 sessions de 2h30.
+
+Les dates prévisionnelles de l'Action sont : {.inline-list}
+1. 20/03/2020
+2. 27/03/2020
+3. 3/04/2020
+4. 10/04/2020
+5. 17/04/2020
+6. 24/04/2020
+7. 7/05/2020
+8. 15/05/2020
+9. 29/05/2020
+10. 5/06/2020
+11. 12/06/2020
+12. 19/06/2020
+13. 26/06/2020
+14. 3/07/2020
+15. 10/07/2020
+16. 17/07/2020
+
+Les sessions sont organisées de 9h30 à 12h00.
+
+## Lieu
+
+L’Action de formation se déroulera en vidéoconférence sur Internet,
+via un outil de discussion et de partage d'écran (Whereby.com, Zoom.us, Skype).
+
+## Modifications à l’initiative de la Demandeuse
+
+Tout changement relatif aux dates, horaires et lieux de déroulé de
+l’Action de formation à l’initiative de la Demandeuse devra être signalé
+par écrit au Formateur avec un délai minimum de prévenance de sept jours.
+
+Si l’un de ces changements générait un accroissement des charges financières
+pour l’Organisme de formation, un avenant à la présente ou un devis serait
+établi pour répercuter ce surcout à la Demandeuse.
+
+## Bénéficiaires
+
+L’Action de formation sera réalisée auprès de **{{trainee}}**,
+travailleuse indépendante.
+
+Une liste des Bénéficiaires, ainsi qu’une copie des feuilles d’émargement,
+seront transmises par la Demandeuse à l’Organisme de formation dans les
+trois jours suivant chaque session.
+
+L’effectif des Bénéficiaires est limité à une seule personne.
+
+## Dispositions financières
+
+En contrepartie de cette action de formation, l'employeur s'acquittera
+des coûts suivants.
+
+Frais de formation : **{{prix_ht}},00€ hors taxes**.
+
+Cette prestation fait l’objet d’une exonération de TVA au titre de
+l’Article 261-4-4 du Code Général des Impôts.
+
+## Paiement du prix
+
+Le règlement sera effectué à l’Organisme de formation par virement à
+réception de la facture en fin de prestation ou mensuellement en fonction
+des prestations effectuées au cours du mois échu.
+
+## Propriété intellectuelle
+
+L’ensemble des documents, méthodes et supports pédagogiques utilisés dans
+le cadre de cette Action de formation sont libres de droits.
+
+## Durée
+
+La présente Convention prend effet à la date de sa signature par la Demandeuse
+et à défaut, au plus tard la veille du premier jour de la prestation de formation.
+
+Elle est conclue pour une durée de 12 mois et au minimum jusqu’au lendemain
+du dernier jour d’exécution de la prestation de formation.
+
+## Renouvellement et prorogation
+
+La Convention ne peut être renouvelée autrement que par écrit.
+
+Elle peut être prorogée à la demande de la partie la plus diligente par
+la signature d’un avenant ou de tout document de nature à justifier de
+cette demande et de son acception par l’autre partie.
+
+Les clauses de cette Convention continueront à s’appliquer durant la phase
+de prorogation.
+
+## Résiliation, Résolution
+
+Une résolution amiable pourra intervenir sur accord commun des parties
+entériné par la signature d’un avenant à la présente.
+
+Hormis cas de force majeure, épidémie ou grève générale, le non-respect des
+articles de la présente entrainera sa résiliation à l’initiative de la partie
+fautive. Cette résiliation interviendra au trentième jour suivant la mise en
+demeure adressée par la partie victime à la partie fautive par courrier
+recommandé avec accusé de réception.
+
+Les sommes dues à la date de résiliation ainsi que les éventuelles pénalités
+seront immédiatement exigibles.
+
+## Clause pénale
+
+Sauf faute grave du Formateur, force majeure, épidémie ou grève générale,
+une pénalité pourra être exigée par l’Organisme de Formation en cas
+d’arrêt unilatéral de la Convention à l’initiative de la Demandeuse.
+
+Cette pénalité sera calculée proportionnellement aux nombres de sessions
+concernées par l’annulation à raison de 40% des sommes qui auraient dues
+être facturées si la prestation avait été réalisée dans sa totalité.<br>
+Un minimum de 300 euros sera exigé si le calcul ci-dessus n’atteignait
+pas ce montant.
+
+Sauf faute grave de la Demandeuse, force majeure, épidémie ou grève,
+une pénalité de 300 euros pourra être exigée par la Demandeuse en cas d’arrêt
+unilatéral de la Convention à l’initiative de l’Organisme de formation.
+
+## Droit applicable, contestations et litiges
+
+La présente Convention et ses annexes sont rédigées en langue française
+et soumises au Droit Français.
+
+Tout litige pouvant naitre de l’application des clauses ci-dessus fera,
+en premier lieu, l’objet d’un recours à arbitrage d’un tiers arbitre choisi
+d’un commun accord entre les parties.
+
+En cas d’échec de cette démarche ou d’incapacité à désigner un arbitre d’un
+commun accord, les juridictions du ressort de la Cour d’appel de Lyon
+seront compétentes pour connaitre du litige.
+
+## Divisibilité
+
+Si l’une des clauses ci-dessus se trouvait frappée de nullité par décision
+de justice, les autres continueraient à s’appliquer en conservant leur force
+et leur portée.
+
+## Documents juridiques et annexes
+
+Peuvent être annexées à la présente Convention les documents suivants
+classés par ordre d’importance juridique décroissante. Les clauses figurant
+à la présente convention prévalent toujours sur celles figurant dans ces
+documents:
+
+- Des avenants ou lettres avenant
+- Des devis
+- Les conditions générales de vente relatives aux prestations de services
+  en vigueur dans Solstice
+- Le programme détaillé de la formation
+- Des courriers recommandés échangés par les parties postérieurement à la
+  signature de la présente
+- Des courriers échangés par les parties postérieurement à la signature de
+  la présente
+- Des courriels échangés par les parties postérieurement à la signature de
+  la présente
+
+
+<div class="no-break">
+Fait en triple exemplaires à Eurre, le {{#dateFormat}}{{docdate}}{{/dateFormat}}.
+
+| Pour la Demandeuse | Pour l'Organisme de formation                            | Le Formateur
+| ---                | ---                                                      | ---
+| {{trainee}}        | Bertrand Barrot<br>par délégation du<br>directeur général   | {{signee}}
+{.signature}
+</div>
+
+</main>
+</body>
+</html>
