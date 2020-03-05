@@ -36,8 +36,8 @@
 </footer>
 
 <main data-markdown>
-# Convention simplifiée de formation professionnelle (article L 6353-1 du code du travail)
-N°{{docdate}}-N°000{.subtitle}
+# Convention simplifiée de formation professionnelle (article L6353-1 du code du travail)
+{{convention_id}}<!-- <year>-TP-<entrepreneur ID>-{01, 02, ...} -->{.subtitle}
 
 **Entre les soussigné·e·s** :
 
@@ -52,8 +52,10 @@ N°{{docdate}}-N°000{.subtitle}
   représentée par M. Jean-Jacques MAGNAN, directeur général, ayant tout
   pouvoir à l’effet des présentes,<br>
   désignée ci-après l’**Organisme de formation**, d’une part,
-2. et la personne morale **{{trainee}}** immatriculée en Préfecture sous le numéro
-  [{{siret}}](https://entreprise.data.gouv.fr/etablissement/{{siret}}),<br>
+2. et la personne morale **{{trainee}}**, {{trainee_company_type}},
+  domiciliée au {{trainee_company_address}}, immatriculé
+  en Préfecture de Région {{trainee_company_region}}
+  sous le numéro de SIRET [{{siret}}](https://entreprise.data.gouv.fr/etablissement/{{siret}}),<br>
   désignée ci-après la **Demandeuse**, d’autre part.
 
 
@@ -107,14 +109,9 @@ discuter avec l'intervenant **Solstice**, expert en programmation,
 en techniques de développement incrémental de logiciel et en transmission
 de compétences par la pratique.
 
-Cette formation s'adresse à des designers UX ayant une utilisation non-technique
-des données, et ayant constitué des systèmes d'information visuels
-dans un contexte professionnel, c'est-à-dire entre autres
-sous les contraintes suivantes :
-
-- conception d'un système d'information visuel ("_design system_") à l'aide d'un logiciel graphique (Photoshop, Sketch, Figma, etc.)
-- conception graphique de visualisations de données
-- programmation de pages web avec HTML, CSS et JavaScript
+Cette formation s'adresse à des designers (UI, UX) ayant constitué des
+interfaces graphiques servant à représenter des données dans un contexte
+professionnel, sans avoir les connaissances techniques pour les réaliser.
 
 Il est attendu comme pré-requis que les participant·e·s aient une
 connaissance préalable théorique des représentations de données, des principes
@@ -122,9 +119,9 @@ d'architecture de l'information et des fondamentaux du fonctionnement des
 documents web, qu'ils ou elles utilisent un ou plusieurs éditeurs de textes
 pour modifier des programmes existants.
 
-Type d'action de formation (article L 6313-1 du code du travail : adaptation,
+Type d'action de formation (article L6313-1 du code du travail : adaptation,
 promotion, prévention, acquisition, entretien ou perfectionnement des
-connaissances) : **acquisition et perfectionnement de connaissances**.
+connaissances) : **parcours pédagogique permettant d'atteindre un objectif professionnel**.
 
 
 ## Contenu de l'Action de Formation
@@ -199,8 +196,10 @@ Les sessions sont organisées de 9h30 à 12h00.
 
 ## Lieu
 
-L’Action de formation se déroulera en vidéoconférence sur Internet,
-via un outil de discussion et de partage d'écran (Whereby.com, Zoom.us, Skype).
+L’Action de formation se déroulera à distance (Article L6313-2), à l'aide
+d'un système de vidéoconférence sur Internet,
+via un outil de discussion et de partage d'écran
+(Whereby.com, Zoom.us, Skype).
 
 ## Modifications à l’initiative de la Demandeuse
 
